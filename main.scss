@@ -11,7 +11,7 @@ $enable-negative-margins: true;
   background-color: $secondary;
   padding-left: 30px;
   padding-right: 30px;
-  margin-right: 60px;
+  margin-right: 130px !important;
   margin-left: 15px;
   text-align: center;
   font-size: small;
@@ -24,14 +24,19 @@ $enable-negative-margins: true;
 
 .btn-secondary:hover {
   color: $secondary;
-  background-color: white;
+  background-color: rgb(252, 233, 233);
 }
 
 .nav-link:hover {
   color: $secondary;
 }
 
-@media (max-width: 576px) {
+.text-parrafo {
+    color: #6c757d; /*se personaliza el color del texto ya que el color secondary original se modificó*/  
+}
+
+
+@media (max-width: 575px) {
   .navbar-toggler {
     border: none; /*elimina el border de la hamburguesa*/
   }
@@ -72,7 +77,9 @@ $enable-negative-margins: true;
     margin-bottom: 4%;
     padding-right: 20%;
     padding-left: 20%;
+    margin-right: 5px;
   }
+  
 
   #nav-link-features:hover {
     color: $secondary;

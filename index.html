@@ -13,8 +13,8 @@
 <body>
  
     <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
-        <div class="container-fluid">
-            <img src="./img/logo-bookmark.svg" alt="logo de Bookmark" class="d-inline-block align-text-top ms-0 ms-md-5">  
+        <div class="container-fluid my-4">
+            <img src="./img/logo-bookmark.svg" alt="logo de Bookmark" class="d-inline-block align-text-top ms-5">  
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,25 +33,33 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="row mb-5">
-            <div class="col text-center pt-5 mt-5" style="position:relative; z-index:1">
-                <img src="./img/illustration-hero.svg" alt="ilustracion de bookmark" class="img-fluid " >
+        
+        <div class="row mb-5 mt-5 mx-3 justify-content-center ">
+
+            <div class="col-sm-8 col-md-6 text-center pt-5 mt-4 order-sm-1 order-md-2 order-lg-2">
+           
+                <img src="./img/illustration-hero.svg" alt="ilustracion de bookmark" class="img-fluid">
             
-            <!-- Fondo de imagen1 -->            
-            </div>
-            <div class="row justify-content-end" style="position: absolute; bottom: -160px">
-                <div class="col-6 bg-primary"
-                  style="height: 400px; width: 60%; border-bottom-left-radius: 200px; border-top-left-radius:200px; z-index:0;">
-                
-                </div>
+            
               </div>
-        </div>   
 
-        <!-- FIN CONTAINER -->
-    </div>
+              <div class="col-sm-8 col-md-6 order-sm-2 order-md-1 order-lg-1 align-self-center text-center text-md-start"> 
+                <h2 class="mt-md-5 pt-md-5">A Simple Bookmark</h2>
+                <h2>Manager</h2>          
+                <div>
+                  <p class="my-3 text-parrafo">A clean and simple interface to organize your favourite websites. Open a new
+                    browser tab and see your sites load instantanly. Try it for free.</p>
+          
+                  <div class="flex-md-col"> 
+                    <a class="btn btn-primary" href="#">Get it on Chrome</a>
+                    <a class="btn btn-light shadow mx-2" href="#">Get it on Firefox</a>
+                  </div>
+                </div>
+    
 
 
-   
+        </div>        
+    
 
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
