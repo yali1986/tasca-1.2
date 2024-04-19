@@ -6,6 +6,25 @@ $enable-negative-margins: true;
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
+.btn-primary {
+text-transform: capitalize;
+padding-left: 30px;
+padding-right: 30px;
+}
+
+.card-title {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.card {
+  border: none;
+}
+
+.custom-size {
+  height: 40%;
+  width: 40%;
+}
 
 .btn-secondary {
   color: white;
@@ -39,8 +58,6 @@ $enable-negative-margins: true;
 
 
 // tabs
-
-
 .nav-tabs .nav-link {
   color: #6c757d !important;  // color del texto de cada etiqueta tab
   border: none !important;
@@ -71,7 +88,6 @@ $enable-negative-margins: true;
   background-color: $secondary; /* Color del borde inferior */
   color: black;
 }
-
 // Fin tabs
 
 
@@ -116,12 +132,6 @@ $enable-negative-margins: true;
   }  
 }
 
-// @media (max-width: 768px) {
-//   .nav .nav-tabs {
-//   display: flex !important;
-//   flex-direction: column !important;    
-//   margin-right: 0%;  
-//   }
-// }
+
 
 
