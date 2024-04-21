@@ -19,6 +19,8 @@ body {
 .btn-secondary {
   color: white;
   background-color: $secondary;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
   margin-right: 130px !important;
@@ -73,6 +75,19 @@ body {
   font-weight: 400;
 }
 
+.btn-primary-chrome { 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  }
+
+  .btn-light:hover {
+    background-color: white;
+    border: 2px solid #6c757d;
+    color: #6c757d;
+  }
+
 .custom-size {
   height: 30%;
   width: 30%;
@@ -81,7 +96,6 @@ body {
 
 
 // accordion
-
 
 .accordion-item {
   border-left: none !important;
@@ -154,23 +168,42 @@ body {
 }
 // Fin tabs
 
-
-.table td:hover {
-  color: $secondary;
-  cursor: pointer;
+// footer
+.card-header-footer, .card-body-footer {
+  background-color: $primary;
+  color: white;
+  border: none; 
+  width: 100%;
 }
+
+.btn-secondary-footer {
+  margin-left: 0px;  
+}
+
+.navbar-costum {
+  background-color: rgb(33, 33, 114);   
+}
+
+.col-costum {
+  margin-left: 40%!important;
+}
+
+.facebook:hover {
+cursor: pointer;
+}
+
+// fin footer
+
 
 @media (max-width: 575px) {
 
   .navbar-toggler  {
     border: none; /*elimina el border de la hamburguesa*/
   }
-
        
   .navbar-toggler-icon {
     background-image: url("./img/icon-hamburger.svg"); /*agrega la imagen de hamburguesa del proyecto propio */
   } 
-
  
   #navbarNavAltMarkup {  // todo el desplagable azul
     margin-top: 4% !important;
@@ -201,7 +234,3 @@ body {
     padding-left: 20%;
   }  
 }
-
-
-
-

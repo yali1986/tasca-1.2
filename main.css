@@ -12702,6 +12702,8 @@ body {
 .btn-secondary {
   color: white;
   background-color: #fa5959;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
   margin-right: 130px !important;
@@ -12753,6 +12755,19 @@ body {
   color: #5265e1;
   border: 2px solid #5265e1 !important;
   font-weight: 400;
+}
+
+.btn-primary-chrome {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.btn-light:hover {
+  background-color: white;
+  border: 2px solid #6c757d;
+  color: #6c757d;
 }
 
 .custom-size {
@@ -12827,8 +12842,26 @@ body {
   color: black;
 }
 
-.table td:hover {
-  color: #fa5959;
+.card-header-footer, .card-body-footer {
+  background-color: #5265e1;
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+.btn-secondary-footer {
+  margin-left: 0px;
+}
+
+.navbar-costum {
+  background-color: rgb(33, 33, 114);
+}
+
+.col-costum {
+  margin-left: 40% !important;
+}
+
+.facebook:hover {
   cursor: pointer;
 }
 

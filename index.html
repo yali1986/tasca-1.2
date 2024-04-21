@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boostrap 5 y Sass</title>
     <link rel="stylesheet" href="main.css">
-
-
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
         <div class="container-fluid my-4">
-            <img src="./img/logo-bookmark.svg" alt="logo de Bookmark" class="d-inline-block align-text-top ms-5 ms-sm-4 ms-lg-5">
+            <img src="./img/logo-bookmark.svg" alt="logo de Bookmark"
+                class="d-inline-block align-text-top ms-5 ms-sm-4 ms-lg-5">
             <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -53,7 +52,7 @@
                             browser tab and see your sites load instantanly. Try it for free.</p>
 
                         <div class="flex-md-col">
-                            <a class="btn btn-primary" href="#">Get it on Chrome</a>
+                            <a class="btn btn-primary btn-primary-chrome" href="#">Get it on Chrome</a>
                             <a class="btn btn-light shadow mx-2" href="#">Get it on Firefox</a>
                         </div>
                     </div>
@@ -116,8 +115,7 @@
                             </div>
                         </div> <!-- fin tab1 -->
 
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            <!-- inicio tab2 -->
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"> <!-- inicio tab2 -->
 
                             <div class="d-flex">
                                 <div class="col-6 d-flex justify-content-center"> <!-- inicio content tab2-->
@@ -135,9 +133,7 @@
                             </div>
 
                         </div><!-- fin tab2 -->
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <!-- inicio tab3 -->
-
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"> <!-- inicio tab3 -->
 
                             <div class="d-flex">
                                 <div class="col-6 d-flex justify-content-center"> <!-- inicio content tab3 -->
@@ -226,105 +222,184 @@
             </div>
     </section>
 
-    <!-- ex-4 --> 
+    <!-- ex-4 -->
 
-<section>
+    <section>
 
-    <div class="row justify-content-center mt-5 pt-5">
-        <div class="col-8 text-center">
-            <h2>Frequently Asked Questions</h2>
-        </div>
+        <div class="row justify-content-center mt-5 pt-5">
+            <div class="col-8 text-center">
+                <h2>Frequently Asked Questions</h2>
+            </div>
 
 
-        <div class="row justify-content-center">
-            <div class="col-6 text-center text-parrafo">
-                <p>Here are some of our FAQs. If you have any other questions you`d like answered please feel free to email us.</p>
+            <div class="row justify-content-center">
+                <div class="col-6 text-center text-parrafo">
+                    <p>Here are some of our FAQs. If you have any other questions you`d like answered please feel free
+                        to email us.</p>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center my-5 pt-5">
+
+                <div class="col-6 text-center">
+
+                    <div class="accordion" id="accordionExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is Bookmark?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, quia magni
+                                    veniam, labore harum nemo nam, quisquam in quod minima sapiente voluptatem. Quae et,
+                                    magni dignissimos a, eius tempora laboriosam at eum aspernatur earum provident
+                                    voluptate sunt debitis ducimus hic cum. Quis iste perferendis nesciunt reiciendis
+                                    sint nisi, totam atque.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    How can I request a new browser?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa perferendis omnis sed
+                                    at aspernatur eveniet numquam dignissimos earum illo quas necessitatibus
+                                    voluptatibus velit, ratione nulla deserunt, provident dolorem sapiente eaque rem
+                                    distinctio sequi amet quasi.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Is there a mobile app?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ad asperiores
+                                    eveniet laborum? Obcaecati consectetur sunt, vero, voluptatum repudiandae earum
+                                    quibusdam libero tempore numquam veniam similique illum nostrum quia perferendis.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What about other Chromiun browsers?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet quasi labore
+                                    voluptas minus ullam non! Nemo voluptatem sit repellendus harum quos? Iste minima
+                                    possimus libero? Repellat officiis minus, magnam minima delectus dolores tempora,
+                                    tenetur quae sint eum vel exercitationem maxime nesciunt aspernatur enim earum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- fin col -->
+
+                <div class="row mt-5">
+                    <div class="col d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary">More info</button>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+
+    <div class="row justify-content-center bg-primary py-4">
+        <div class="text-center">
+            <div class="card-header-footer my-3" style="letter-spacing: 2px; font-size: small;">
+                <span>3 5 ,0 0 0 +</span> <span style="margin-left: 20px"> A L R E A D Y</span> <span
+                    style="margin-left: 20px">J O I N E D </span>
+            </div>
+            <div class="card-body-footer">
+                <h5 class="card-title">Stay up-to-date with what we`re doing</h5>
+                <h5 class="card-title mb-5"> we`re doing</h5>
+            </div>
+
+            <div class="row mb-3 bg-primary w-75 ms-5">
+                <div class="col-3 offset-4">
+
+
+                    <input type="email" class="form-control ms-5 px-1" id="exampleFormControlInput1"
+                        placeholder="Enter your email address">
+                </div>
+
+                <div class="col-5">
+                    <a href="#" class="btn btn-secondary">Contact Us</a>
+                </div>
+
             </div>
         </div>
 
-
-    <div class="row justify-content-center my-5 pt-5">
-
-        <div class="col-6 text-center">
-
-        <div class="accordion" id="accordionExample">
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    What is Bookmark?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, quia magni veniam, labore harum nemo nam, quisquam in quod minima sapiente voluptatem. Quae et, magni dignissimos a, eius tempora laboriosam at eum aspernatur earum provident voluptate sunt debitis ducimus hic cum. Quis iste perferendis nesciunt reiciendis sint nisi, totam atque.
-
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                    How can I request a new browser?
-                  </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa perferendis omnis sed at aspernatur eveniet numquam dignissimos earum illo quas necessitatibus voluptatibus velit, ratione nulla deserunt, provident dolorem sapiente eaque rem distinctio sequi amet quasi.
-                  </div>
-                </div>
-              </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Is there a mobile app?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ad asperiores eveniet laborum? Obcaecati consectetur sunt, vero, voluptatum repudiandae earum quibusdam libero tempore numquam veniam similique illum nostrum quia perferendis.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    What about other Chromiun browsers?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet quasi labore voluptas minus ullam non! Nemo voluptatem sit repellendus harum quos? Iste minima possimus libero? Repellat officiis minus, magnam minima delectus dolores tempora, tenetur quae sint eum vel exercitationem maxime nesciunt aspernatur enim earum.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>  <!-- fin col -->
-
-        <div class="row mt-5">
-            <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-primary">More info</button>
-            </div>        
-        </div>
 
     </div>
-</section>
 
 
-   
+    <!-- barra ultima del footer ex6-->
+
+    <nav class="navbar navbar-expand navbar-costum">
+        <div class="container-fluid">
+            <div class="row w-100">
+
+                <div class="col">
+
+                    <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav me-lg-5">
+                            <img src="./img/logo-bookmark.svg" alt="logo de Bookmark"
+                                class="mt-2 ms-5 ms-sm-4 ms-lg-5 h-75">
+                            <a class="nav-link ms-xl-0" id="nav-link-features" style="color:white" href="#">Features</a>
+                            <a class="nav-link" style="color:white" href="#">Pricing</a>
+                            <a class="nav-link" style="color:white" href="#">Contact</a>
+                        </div>
+
+                        <div class="col col-costum">
+                            <img src="./img/icon-twitter.svg" alt="icono de twiter" class="facebook">
+
+                            <img src="./img/icon-facebook.svg" alt="icono de facebook" class="ms-4 facebook">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
 
     </div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
-    <!-- bootstrap.bundle.min.js indicado-->
 
-   
 
-    
-   
 </body>
 
 </html>
