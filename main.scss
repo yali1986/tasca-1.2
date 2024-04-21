@@ -6,24 +6,14 @@ $enable-negative-margins: true;
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
-.btn-primary {
-text-transform: capitalize;
-padding-left: 30px;
-padding-right: 30px;
+body {
+  overflow-x: hidden !important;
 }
 
-.card-title {
-  font-size: x-large;
-  font-weight: 700;
-}
 
-.card {
-  border: none;
-}
-
-.custom-size {
-  height: 40%;
-  width: 40%;
+.button { 
+  background-color: white !important;
+  color: #fa5959 !important;
 }
 
 .btn-secondary {
@@ -56,6 +46,80 @@ padding-right: 30px;
     color: #6c757d; /*se personaliza el color del texto ya que el color secondary original se modificó*/  
 }
 
+// card
+.card-title {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.card {  
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  width: 90%;  
+}
+
+.btn-primary {
+  text-transform: capitalize;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+
+.btn-primary:hover {
+  background-color: white;
+  color: $primary;
+  border: 2px solid $primary !important;
+  font-weight: 400;
+}
+
+.custom-size {
+  height: 30%;
+  width: 30%;
+}
+// fin card
+
+
+// accordion
+
+
+.accordion-item {
+  border-left: none !important;
+  border-right: none !important;
+}
+.accordion-body {
+  line-height: 2.0;
+  text-align: left;
+  padding-top: 3%;   
+  padding-bottom: 5%; 
+}
+
+.collapsed {
+  box-shadow: none !important; //quita la sombra azul del boder del header    
+}
+
+.collapsed:hover {
+  color: $secondary;  
+}
+
+
+.accordion-button:not(.collapsed) {  
+  background-color: white;
+  box-shadow: none ; //quita la sombra azul del boder del header 
+  font-weight: 600; 
+}
+
+.accordion-button:not(.collapsed)::after { // cambia el icono del dropdown solo cuando se despliega el boton 
+  background-image: url("./img/icon-drop-down-secundario.png"); /* OJO descargado de internet, no está en los recursos*/ 
+  background-size: 115% !important;   
+}
+
+.accordion-button::after { // cambia el icono del dropdown 
+  background-image: url("./img/icon-arrow.svg"); // está en los recursos 
+  background-size: 80% !important; // se disminuye el tamaño del icono 
+}
+
+// fin accordion
 
 // tabs
 .nav-tabs .nav-link {
@@ -91,17 +155,23 @@ padding-right: 30px;
 // Fin tabs
 
 
+.table td:hover {
+  color: $secondary;
+  cursor: pointer;
+}
 
 @media (max-width: 575px) {
 
-  .navbar-toggler {
+  .navbar-toggler  {
     border: none; /*elimina el border de la hamburguesa*/
   }
-  
+
+       
   .navbar-toggler-icon {
     background-image: url("./img/icon-hamburger.svg"); /*agrega la imagen de hamburguesa del proyecto propio */
   } 
 
+ 
   #navbarNavAltMarkup {  // todo el desplagable azul
     margin-top: 4% !important;
     background-color: $blue-800;   

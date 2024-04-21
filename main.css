@@ -12690,24 +12690,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.btn-primary {
-  text-transform: capitalize;
-  padding-left: 30px;
-  padding-right: 30px;
+body {
+  overflow-x: hidden !important;
 }
 
-.card-title {
-  font-size: x-large;
-  font-weight: 700;
-}
-
-.card {
-  border: none;
-}
-
-.custom-size {
-  height: 40%;
-  width: 40%;
+.button {
+  background-color: white !important;
+  color: #fa5959 !important;
 }
 
 .btn-secondary {
@@ -12740,6 +12729,73 @@ textarea.form-control-lg {
   color: #6c757d; /*se personaliza el color del texto ya que el color secondary original se modificó*/
 }
 
+.card-title {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.card {
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  width: 90%;
+}
+
+.btn-primary {
+  text-transform: capitalize;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #5265e1;
+  border: 2px solid #5265e1 !important;
+  font-weight: 400;
+}
+
+.custom-size {
+  height: 30%;
+  width: 30%;
+}
+
+.accordion-item {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.accordion-body {
+  line-height: 2;
+  text-align: left;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.collapsed {
+  box-shadow: none !important;
+}
+
+.collapsed:hover {
+  color: #fa5959;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  box-shadow: none;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("./img/icon-drop-down-secundario.png"); /* OJO descargado de internet, no está en los recursos*/
+  background-size: 115% !important;
+}
+
+.accordion-button::after {
+  background-image: url("./img/icon-arrow.svg");
+  background-size: 80% !important;
+}
+
 .nav-tabs .nav-link {
   color: #6c757d !important;
   border: none !important;
@@ -12769,6 +12825,11 @@ textarea.form-control-lg {
   height: 2px; /* Altura del borde inferior */
   background-color: #fa5959; /* Color del borde inferior */
   color: black;
+}
+
+.table td:hover {
+  color: #fa5959;
+  cursor: pointer;
 }
 
 @media (max-width: 575px) {
